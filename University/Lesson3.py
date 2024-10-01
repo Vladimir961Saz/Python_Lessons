@@ -1,6 +1,18 @@
-kg=50
-n= map(float([1,2,3,4,5,6,7,8,9,10]))
+a=int(input('Введите верхний предел:'))
+b=0
 s=0
-for i in range (float(n)):
-    s=n*kg
+c=0
+if a>100:
+    print ('Верхний предел должен быть меньше 100!')
+else:
+   while c<a:
+     c+=1
+     b+=1
+     s+=b**3
+     print (int(s))
+     
+
+     
+
+
 
