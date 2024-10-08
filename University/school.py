@@ -1,15 +1,12 @@
-a=int(input('Введите верхний предел:'))
-b=0
-s=0
-c=0
-if a>100:
-    print ('Верхний предел должен быть меньше 100!')
-else:
-   while c<a:
-     c+=1
-     b+=1
-     s+=b**3
-     print (int(s))
+s = 'Peter the Great'
+print(s[:1])
+
+l = [i*i for i in range (10)]
+print(l)
+
+from random import randint
+l = [randint (10,80) for x in range (10)]
+print (l)
      
 
      
