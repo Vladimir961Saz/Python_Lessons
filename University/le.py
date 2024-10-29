@@ -9,7 +9,14 @@
 # massive (my_len)
 
 
-a = input ()
-x=isinstance ("a",(int))
-print (x)
+# a= int(input())
+# print (type(a))
+# x=isinstance (a,(int))
+# print (x)
+
+# a=int(input())
+# if a<=1 or a<=3:
+#     print ('Введённое число принадлежит заданному промежутку')
+# else:
+#     print ('Введённое число не принадлежит заданному промежутку')
  
