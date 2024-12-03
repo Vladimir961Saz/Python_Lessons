@@ -1,6 +1,6 @@
-# import re 
-# lst = input() 
-# print('Список номеров частных автомобилей:', re.findall(r'\b[АВЕКМНОРСТУХ]\d{3}[АВЕКМНОРСТУХ]{2}\d{2,3}\b', lst)) 
+# import re
+# lst = input()
+# print('Список номеров частных автомобилей:', re.findall(r'\b[АВЕКМНОРСТУХ]\d{3}[АВЕКМНОРСТУХ]{2}\d{2,3}\b', lst))
 # print('Список номеров такси:', re.findall(r'\b[АВЕКМНОРСТУХ]{2}\d{5,6}\b', lst))
 
 # import re
@@ -25,4 +25,3 @@
 # text=str(input())
 # abbreviations = find_abbreviations(text)
 # print(abbreviations)
-
