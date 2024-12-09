@@ -1,19 +1,15 @@
-from random import randint as rd
+# 5
 import random
-matrix = [[random.randint(-10, 10) for _ in range(3)] for _ in range(3)]
-print('Исходная матрица:', matrix)
+matrix = [[random.randint(-10, 10) for _ in range(10)] for _ in range(10)]
 s = []
 for i in range(len(matrix)):
     s.append(sum(matrix[i]))
-print("Строка с наибольшей суммой:", matrix[s.index(max(s))], "Сумма элементов:", max(
-    s), "Строка с наименьшей суммой:", matrix[s.index(min(s))], "Сумма элементов:", min(s))
+print('Строка с наибольшей суммой элементов:', matrix[s.index(max(s))])
+print('Сумма элементов строки:', max(s))
+print('Строка с наименьшей суммой элементов:', matrix[s.index(min(s))])
+print('Сумма элементов строки:', min(s))
 
-m, n = map(int, input().split())
-arr = [[rd(1, 10) for i in range(m)] for j in range(n)]
-for i in arr:
-    print(*i)
-print()
-for row in arr:
-    rmin = min(row)
-    row = [(1 if rmin % 2 else 0) if j == rmin else j for j in row]
-    print(*row)
+# 6
+array_size = 8
+random_array = [random.randint(1, 100) for _ in range(array_size)]
+print(f"Массив случайных чисел: {random_array}")

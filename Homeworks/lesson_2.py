@@ -1,10 +1,11 @@
+# 1
 a = int(input())
 b = int(input())
 if b != 0:
     print(a/b)
 else:
     print('Делить на ноль нельзя!')
-
+# 2
 a = int(input())
 if a > 20:
     b = a*35/100
@@ -12,7 +13,7 @@ if a > 20:
     print('Итоговая сумма с учётом скидки:', a-b)
 else:
     print('Итоговая сумма без скидки:', a)
-
+# 3
 a = int(input())
 if a == 12 or a == 1 or a == 2:
     print('Сейчас зима')
