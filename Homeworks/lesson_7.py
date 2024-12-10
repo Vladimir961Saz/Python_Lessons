@@ -58,11 +58,24 @@ def longest_words(file):
 longest_words('article.txt')
 
 # 4
-print('\n#4')
-name = input('Введите имя файла: ')+'.txt'
-file = open(name, "w")
-s = input('Введите строку (для завершения нажмите ENTER): ')+'\n'
-while len(s) > 1:
-    file.write(s)
-    s = input('Введите строку (для завершения нажмите ENTER): ')+'\n'
-print('Работа с файлом окончена')
+
+
+def text_editor():
+    file_name = input("Введите имя файла (без расширения): ") + ".txt"
+
+    with open(file_name, "w") as file:
+        print(f"Файл {file_name} открыт для редактирования.")
+        print("Введите текст (для завершения введите пустую строку).")
+
+        while True:
+
+            line = input()
+
+            if line == "" or line in ["@", "#", "$"]:
+                print(f"Сохранение файла {file_name} и завершение работы.")
+                break
+
+            file.write(line + "\n")
+
+
+text_editor()
